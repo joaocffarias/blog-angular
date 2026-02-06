@@ -1,0 +1,58 @@
+<div class="post-detail-container" *ngIf="post">
+    <article class="post-article">
+        <header class="post-header">
+            <div class="breadcrumb">
+                <a routerLink="/">← Voltar para Notícias</a>
+            </div>
+            <span class="category">{{ post.category }}</span>
+            <h1 class="post-title">{{ post.title }}</h1>
+            <div class="post-meta">
+                <span class="author">Por {{ post.author }}</span>
+                <span class="separator">•</span>
+                <span class="date">{{ post.date | date: 'dd/MM/yyyy' }}</span>
+                <span class="separator">•</span>
+                <span class="read-time">{{ post.readTime }} min de leitura</span>
+            </div>
+            <div class="tags">
+                <span class="tag" *ngFor="let tag of post.tags">#{{ tag }}</span>
+            </div>
+        </header>
+
+        <div class="post-image" [style.background-image]="'url(' + post.imageUrl + ')'"></div>
+
+        <div class="post-content">
+            <p class="excerpt">{{ post.excerpt }}</p>
+            <div class="content-body">
+                <p>{{ post.content }}</p>
+
+                <h2>Conclusão</h2>
+                <p>
+                    Este é um exemplo de post no TechBlog. Em um cenário real, o conteúdo seria muito mais
+                    extenso e detalhado, com exemplos de código, imagens ilustrativas e explicações aprofundadas
+                    sobre o tema abordado.
+                </p>
+
+                <p>
+                    Continue acompanhando nosso blog para mais artigos sobre tecnologia, desenvolvimento web
+                    e as últimas tendências do mercado!
+                </p>
+            </div>
+        </div>
+
+        <footer class="post-footer">
+            <div class="share-section">
+                <h3>Gostou deste artigo?</h3>
+                <p>Compartilhe com seus amigos e colegas desenvolvedores!</p>
+            </div>
+            <div class="back-link">
+                <a routerLink="/" class="btn-back">← Ver todos os posts</a>
+            </div>
+        </footer>
+    </article>
+</div>
+
+<div class="not-found" *ngIf="!post">
+    <h2>Post não encontrado</h2>
+    <p>O post que você está procurando não existe.</p>
+    <a routerLink="/" class="btn-back">← Voltar para Notícias</a>
+</div>

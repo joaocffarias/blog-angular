@@ -1,0 +1,22 @@
+<div class="home-container">
+  <section class="hero">
+    <h1>Notícias</h1>
+    <p>Atualizado regularmente</p>
+  </section>
+
+  <div class="category-filters">
+    <button class="filter-tag active">Atualizações de Produto</button>
+    <button class="filter-tag">Atendimento ao Cliente</button>
+    <button class="filter-tag">Inovações</button>
+    <button class="filter-tag">Finanças</button>
+    <button class="filter-tag">Desenvolvimento</button>
+    <button class="filter-tag">No Podcast</button>
+    <button class="filter-tag">Estratégias de Investimento</button>
+    <button class="filter-tag">Aprendizado</button>
+    <button class="filter-tag">Liderança</button>
+  </div>
+
+  <section class="posts-grid">
+    <app-post-card *ngFor="let post of posts" [post]="post"></app-post-card>
+  </section>
+</div>
