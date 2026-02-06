@@ -1,59 +1,73 @@
-# BlogAngular
+# Blog Angular Tech
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+Este projeto é um blog de tecnologia moderno e minimalista desenvolvido com [Angular CLI](https://github.com/angular/angular-cli).
 
-## Development server
+![Tech Blog Preview](src/assets/images/angular-17.jpg)
 
-To start a local development server, run:
+## 🚀 Sobre o Projeto
 
-```bash
-ng serve
-```
+Um blog focado em tecnologia com design estilo revista/jornal ("News"), totalmente responsivo e com interface em Português do Brasil.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### ✨ Funcionalidades
 
-## Code scaffolding
+- **Design Moderno e Minimalista**: Foco na tipografia e conteúdo, com bastante espaço em branco.
+- **Layout Assimétrico de Grade**: Exibição estilo revista para os posts na página inicial.
+- **Componentes Standalone**: Utiliza as práticas mais recentes do Angular 17+.
+- **Navegação Fluida**: Roteamento SPA (Single Page Application).
+- **Filtros de Categoria**: Interface visual para filtragem de tópicos.
+- **Totalmente Responsivo**: Adapta-se a celulares, tablets e desktops.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-ng generate component component-name
-```
+- **Angular 17+**
+- **TypeScript**
+- **CSS3 Moderno** (Grid, Flexbox, Variáveis)
+- **HTML5 Semântico**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📦 Como Executar
 
-```bash
-ng generate --help
-```
+### Pré-requisitos
 
-## Building
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
 
-To build the project run:
+### Passo a Passo
 
-```bash
-ng build
-```
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/joaocffarias/blog-angular.git
+   cd blog-angular
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
 
-## Running unit tests
+3. **Inicie o servidor de desenvolvimento**
+   ```bash
+   ng serve --open
+   ```
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+4. **Acesse no navegador**
+   Abra `http://localhost:4200/`. A aplicação recarregará automaticamente se você alterar qualquer arquivo de origem.
 
-```bash
-ng test
-```
+## 🏗️ Estrutura do Projeto
 
-## Running end-to-end tests
+- `src/app/components`: Componentes reutilizáveis (Header, Footer, PostCard).
+- `src/app/pages`: Páginas da aplicação (Home, About, PostDetail).
+- `src/app/services`: Serviços para gerenciamento de dados (PostService).
+- `src/app/models`: Interfaces TypeScript.
+- `src/assets`: Imagens e arquivos estáticos.
 
-For end-to-end (e2e) testing, run:
+## 📝 Comandos Úteis
 
-```bash
-ng e2e
-```
+| Comando | Descrição |
+|---------|-----------|
+| `ng serve` | Inicia o servidor local |
+| `ng build` | Compila o projeto para produção na pasta `dist/` |
+| `ng generate component nome` | Cria um novo componente |
+| `ng test` | Executa testes unitários |
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Desenvolvido com 💙 e Angular.
